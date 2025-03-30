@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://bandazeyna.com/</loc>
+  <lastmod>2025-03-30</lastmod>
+</url>
+<url>
+  <loc>https://bandazeyna.com/leaderboard.html</loc>
+  <lastmod>2025-03-30</lastmod>
+</url>
+<url>
+  <loc>https://bandazeyna.com/bot.html</loc>
+  <lastmod>2025-03-30</lastmod>
+</url>
+<url>
+  <loc>https://bandazeyna.com/profile.html</loc>
+  <lastmod>2025-03-30</lastmod>
+</url>
+<url>
+  <loc>https://bandazeyna.com/tos.html</loc>
+  <lastmod>2025-03-30</lastmod>
+</url>
+<url>
+  <loc>https://bandazeyna.com/privacy-policy.html</loc>
+  <lastmod>2025-03-30</lastmod>
+</url>
+
+</urlset>

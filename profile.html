@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-28Q36YZLGL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-28Q36YZLGL', { 'anonymize_ip': true });
+    </script>
+    
+    <title>Банда Зейна — Профиль и Статистика</title> <meta name="description" content="Ваша статистика, достижения, лидерборды и магазин на официальном сайте Банды Зейна!">
+    <meta name="keywords" content="Банда Зейна, Дискорд бот, Бот для Дискорда, Дискорд статистика, лидерборд, достижения, магазин, сервер Discord">
+    <meta name="theme-color" content="#0c0c0c"> <meta property="og:type" content="profile"> <meta property="og:url" content="https://bandazeyna.com/profile.html"> 
+    <meta property="og:title" content="Банда Зейна — Профиль и Статистика"> 
+    <meta property="og:description" content="Ваша статистика, достижения, лидерборды и магазин на официальном сайте Банды Зейна!">
+    <meta property="og:image" content="https://cdn.discordapp.com/banners/1043562997966188645/374609ce949d7cbbd4924c52a2c16532.png?size=512">
+    <meta property="og:site_name" content="Банда Зейна">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://bandazeyna.com/profile.html"> 
+    <meta name="twitter:title" content="Банда Зейна — Профиль и Статистика">
+    <meta name="twitter:description" content="Ваша статистика, достижения, лидерборды и магазин на официальном сайте Банды Зейна!">
+    <meta name="twitter:image" content="https://cdn.discordapp.com/banners/1043562997966188645/374609ce949d7cbbd4924c52a2c16532.png?size=512">
+
+    <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Банда Зейна" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/common.css"> <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body class="profile-page"> <div class="page-wrapper"> <header>
+        <div class="container">
+            <div class="logo"> <a href="./index.html"><div class="discord-title">Банда Зейна</div> </a> </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"> <span class="sr-only">Меню</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <nav id="primary-navigation">
+                <ul>
+                    <li><a href="./leaderboard.html">Лидерборд</a></li>
+                    <li><a href="./bot.html">Бот Организатор</a></li>
+                    <li><a href="./profile.html" class="learn-more-btn">Профиль</a></li>
+                    <li><button class="discord-login">Войти через Discord</button></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="particles-js"></div> 
+
+    <main class="wrapper"> 
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="" class="profile-avatar" alt="Аватар пользователя"> 
+                <h1 class="profile-username"></h1>
+                <p class="profile-user-id"></p>
+                <p class="profile-user-position"></p>
+            </div>
+
+            <div class="profile-content">
+                <ul class="profile-tabs" role="tablist">
+                    <li class="profile-tab active" data-tab="stats"
+                        role="tab" id="tab-stats" aria-controls="panel-stats" aria-selected="true" tabindex="0">Статистика</li>
+                    <li class="profile-tab" data-tab="achievements"
+                        role="tab" id="tab-achievements" aria-controls="panel-achievements" aria-selected="false" tabindex="-1">Достижения</li>
+                    <li class="profile-tab" data-tab="staff"
+                        role="tab" id="tab-staff" aria-controls="panel-staff" aria-selected="false" tabindex="-1">Стафф</li>
+                    <li class="profile-tab" data-tab="shop"
+                        role="tab" id="tab-shop" aria-controls="panel-shop" aria-selected="false" tabindex="-1">Магазин</li>
+                    <li class="profile-tab" data-tab="deposit"
+                        role="tab" id="tab-deposit" aria-controls="panel-deposit" aria-selected="false" tabindex="-1">Депозит</li>
+                </ul>
+  
+                <div class="profile-tab-content" data-tab="stats"
+                     role="tabpanel" id="panel-stats" aria-labelledby="tab-stats">
+                    <div id="error-container"></div>
+                    <div class="profile-stats"> </div>
+                    <div class="reputation-block" style="display: none;">
+                         <h4>Репутация</h4>
+                        <div class="reputation-value">0</div>
+                        <div class="reputation-bar-container">
+                            <div class="reputation-bar-fill neutral" style="width: 50%;"></div> <div class="reputation-bar-text">0</div>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="profile-tab-content hidden" data-tab="achievements"
+                     role="tabpanel" id="panel-achievements" aria-labelledby="tab-achievements">
+                    <div class="profile-achievements"> </div>
+                </div>
+  
+                <div class="profile-tab-content hidden" data-tab="staff"
+                     role="tabpanel" id="panel-staff" aria-labelledby="tab-staff">
+                    <div class="profile-stats"> </div>
+                </div>
+  
+                <div class="profile-tab-content hidden" data-tab="shop"
+                     role="tabpanel" id="panel-shop" aria-labelledby="tab-shop">
+                    <div class="shop-discount-info"></div>
+                    <div class="shop-items"> </div>
+                </div>
+  
+                <div class="profile-tab-content hidden" data-tab="deposit"
+                     role="tabpanel" id="panel-deposit" aria-labelledby="tab-deposit">
+                    <div class="deposit-content-area"> </div>
+                </div>
+            </div> 
+        </div> </main> 
+    <footer>
+        <div class="container">
+            <p>© 2025 Банда Зейна & Организатор | <a href="./tos.html">Условия Обслуживания</a> | <a href="./privacy-policy.html">Политика Конфиденциальности</a></p>
+        </div>
+    </footer>
+    <button id="backToTopBtn" aria-label="Наверх">
+        <i aria-hidden="true"><img src="./img/up-arrow-icon.svg"></i>
+    </button>
+</div> <div id="loginPromptOverlay" class="modal-overlay">
+       <div id="loginPromptModal" class="modal-content">
+         <h2>Требуется вход</h2>
+         <p>Пожалуйста, войдите через Discord, чтобы получить доступ к этой странице.</p>
+         </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage", 
+      "name": "Банда Зейна — Профиль пользователя", 
+      "description": "Ваша статистика, достижения, предметы магазина и другое на сайте Банды Зейна.", 
+      "url": "https://bandazeyna.com/profile.html",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://bandazeyna.com",
+        "name": "Банда Зейна"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Банда Зейна",
+        "url": "https://bandazeyna.com", 
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bandazeyna.com/icons/icon3.png" 
+        }
+      }
+    }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.js"></script>
+    <script src="./js/script.js" defer></script> <script src="./js/script2.js" defer></script> </body>
+</html>
