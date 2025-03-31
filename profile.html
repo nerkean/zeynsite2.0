@@ -141,39 +141,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.js"></script>
     <script src="./js/script.js" defer></script> <script src="./js/script2.js" defer></script> </body>
-    <script defer>
-        function loadAnalytics() {
-          const script = document.createElement('script');
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-28Q36YZLGL';
-          script.async = true;
-      
-          script.onload = function() {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-28Q36YZLGL', { 'anonymize_ip': true });
-            console.log('Google Analytics loaded and initialized on interaction.'); 
-          };
-    
-          document.head.appendChild(script);
-        }
-      
-        let analyticsLoaded = false; 
-
-        function triggerLoadAnalytics() {
-          if (!analyticsLoaded) {
-            analyticsLoaded = true;
-            loadAnalytics(); 
-            window.removeEventListener('scroll', triggerLoadAnalytics, { capture: true });
-            window.removeEventListener('mousemove', triggerLoadAnalytics, { capture: true });
-            window.removeEventListener('touchstart', triggerLoadAnalytics, { capture: true });
-            console.log('User interaction detected, loading GA.');
-          }
-        }
-      
-        window.addEventListener('scroll', triggerLoadAnalytics, { capture: true, passive: true });
-        window.addEventListener('mousemove', triggerLoadAnalytics, { capture: true, passive: true });
-        window.addEventListener('touchstart', triggerLoadAnalytics, { capture: true, passive: true });
-
-      </script>
 </html>
