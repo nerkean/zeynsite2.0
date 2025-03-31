@@ -821,13 +821,13 @@ margin-left: 9px;
     margin-bottom: 0.5em;
 }
 
-.tos-text h4 {
+.tos-text h3 {
   margin-bottom: 50px;
 }
 
 .tos-text a {
-    color: var(--primary-color, #357cff);
-    text-decoration: none;
+  color: var(--primary-color, #357cff); 
+  text-decoration: underline; 
 }
 
 .tos-text a:hover {
