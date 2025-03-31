@@ -34,14 +34,11 @@
         <meta name="apple-mobile-web-app-title" content="Банда Зейна" />
         <link rel="manifest" href="/icons/site.webmanifest" />
         
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="./css/botpage.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" href="./css/fontawesome-custom.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
+        <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
     </head>
 <body class="bot-page"> 
     <div class="page-wrapper">
@@ -83,7 +80,7 @@
                     <div class="features-grid">
                         <div class="feature-card" data-aos="fade-up">
                             <div class="card-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div> <h3>Детальная Статистика</h3>
-                            <p>Отслеживайте сообщения <strong>(всего, за день, неделю, месяц)</strong>, время в голосовых каналах, заработанные звезды и смотрите свое место в рейтингах.</p>
+                            <p>Отслеживайте сообщения <strong>(всего, за день, неделю, месяц)</strong>, время в голосовых каналах, заработанные звезды и смотрите свое место в <a href="./leaderboard.html">рейтингах</a>.</p>
                         </div>
                         <div class="feature-card" data-aos="fade-up" data-aos-delay="50"> <div class="card-icon"><i class="fas fa-star" aria-hidden="true"></i></div> <h3>Экономика и Звезды</h3>
                             <p>Зарабатывайте звезды ⭐ за активность, делайте вклады под проценты, покупайте уникальную роли и предметы в магазине, влияя на свой статус.</p>
@@ -133,7 +130,7 @@
                     <div class="commands-container categorized"> <h4 class="command-category" data-aos="fade-right">Информация</h4>
                         <div class="command-entry" data-aos="fade-right" data-aos-delay="50">
                             <code>/profile [@пользователь]</code>
-                            <p>Отображение вашего детального профиля (статистика, звезды, роли, инвентарь, достижения) или профиля другого участника.</p>
+                            <p>Отображение вашего детального <a href="./profile.html">профиля</a> (статистика, звезды, роли, инвентарь, достижения) или профиля другого участника.</p>
                         </div>
                          <div class="command-entry" data-aos="fade-right" data-aos-delay="100">
                             <code>/help</code>
