@@ -107,7 +107,6 @@ img {
 }
 
 code {
-  font-family: var(--font-code);
   background-color: var(--bg-code-inline);
   color: var(--accent-primary);
   padding: 0.2em 0.5em;
@@ -967,10 +966,3 @@ margin-left: 9px;
   src: url('../fonts/fira-code-v22-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2') format('woff2');
 }
 
-@font-face {
-  font-display: swap; 
-  font-family: 'Fira Code';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/fira-code-v22-cyrillic_cyrillic-ext_latin_latin-ext-500.woff2') format('woff2'); 
-}
