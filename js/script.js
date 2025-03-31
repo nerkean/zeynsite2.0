@@ -34,7 +34,7 @@ const allowedRoleIds = ['1043565185509630022', '1243243180800082001', '107507259
     };
 
     const PERMANENT_DISCOUNT_ROLE_ID_FRONTEND = '1260383669839724634';
-    const BACKEND_BASE_URL = 'http://localhost:3000';
+    const BACKEND_BASE_URL = 'https://api.bandazeyna.com';
 
     function displayErrorMessage(message, errorObject = null) {
         logger.error("Сообщение об ошибке для пользователя:", message, errorObject || '');
