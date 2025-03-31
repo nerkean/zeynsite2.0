@@ -3,14 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-28Q36YZLGL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-28Q36YZLGL', { 'anonymize_ip': true });
-</script>
 
         <title>Банда Зейна | Сообщество Bee Swarm Simulator в Discord</title>
         <meta name="description" content="Официальный сайт Discord-сообщества 'Банда Зейна' по Bee Swarm Simulator. Отслеживайте статистику, участвуйте в лидербордах, общайтесь и пользуйтесь магазином!">
@@ -169,5 +161,40 @@
         }
         </script>
         <script src="./js/script.js" defer></script><script src="./js/script2.js" defer></script> <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+        <script defer>
+            function loadAnalytics() {
+              const script = document.createElement('script');
+              script.src = 'https://www.googletagmanager.com/gtag/js?id=G-28Q36YZLGL';
+              script.async = true;
+          
+              script.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-28Q36YZLGL', { 'anonymize_ip': true });
+                console.log('Google Analytics loaded and initialized on interaction.'); 
+              };
+        
+              document.head.appendChild(script);
+            }
+          
+            let analyticsLoaded = false; 
+
+            function triggerLoadAnalytics() {
+              if (!analyticsLoaded) {
+                analyticsLoaded = true;
+                loadAnalytics(); 
+                window.removeEventListener('scroll', triggerLoadAnalytics, { capture: true });
+                window.removeEventListener('mousemove', triggerLoadAnalytics, { capture: true });
+                window.removeEventListener('touchstart', triggerLoadAnalytics, { capture: true });
+                console.log('User interaction detected, loading GA.');
+              }
+            }
+          
+            window.addEventListener('scroll', triggerLoadAnalytics, { capture: true, passive: true });
+            window.addEventListener('mousemove', triggerLoadAnalytics, { capture: true, passive: true });
+            window.addEventListener('touchstart', triggerLoadAnalytics, { capture: true, passive: true });
+
+          </script>
 </body>
 </html>
