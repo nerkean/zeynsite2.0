@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-28Q36YZLGL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-28Q36YZLGL', { 'anonymize_ip': true });
-    </script>
-    
     <title>Банда Зейна — Профиль и Статистика</title> <meta name="description" content="Ваша статистика, достижения, лидерборды и магазин на официальном сайте Банды Зейна!">
     <meta name="keywords" content="Банда Зейна, Дискорд бот, Бот для Дискорда, Дискорд статистика, лидерборд, достижения, магазин, сервер Discord">
     <meta name="theme-color" content="#0c0c0c"> <meta property="og:type" content="profile"> <meta property="og:url" content="https://bandazeyna.com/profile.html"> 
@@ -30,10 +23,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Банда Зейна" />
     <link rel="manifest" href="/icons/site.webmanifest" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/common.css"> <link rel="stylesheet" href="./css/profile.css">
 </head>
@@ -152,4 +141,39 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.js"></script>
     <script src="./js/script.js" defer></script> <script src="./js/script2.js" defer></script> </body>
+    <script defer>
+        function loadAnalytics() {
+          const script = document.createElement('script');
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-28Q36YZLGL';
+          script.async = true;
+      
+          script.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-28Q36YZLGL', { 'anonymize_ip': true });
+            console.log('Google Analytics loaded and initialized on interaction.'); 
+          };
+    
+          document.head.appendChild(script);
+        }
+      
+        let analyticsLoaded = false; 
+
+        function triggerLoadAnalytics() {
+          if (!analyticsLoaded) {
+            analyticsLoaded = true;
+            loadAnalytics(); 
+            window.removeEventListener('scroll', triggerLoadAnalytics, { capture: true });
+            window.removeEventListener('mousemove', triggerLoadAnalytics, { capture: true });
+            window.removeEventListener('touchstart', triggerLoadAnalytics, { capture: true });
+            console.log('User interaction detected, loading GA.');
+          }
+        }
+      
+        window.addEventListener('scroll', triggerLoadAnalytics, { capture: true, passive: true });
+        window.addEventListener('mousemove', triggerLoadAnalytics, { capture: true, passive: true });
+        window.addEventListener('touchstart', triggerLoadAnalytics, { capture: true, passive: true });
+
+      </script>
 </html>

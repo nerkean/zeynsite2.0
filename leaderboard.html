@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-28Q36YZLGL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-28Q36YZLGL', { 'anonymize_ip': true });
-</script>
     <title>Банда Зейна — Лидерборды</title>
     <meta name="description" content="Официальный сайт бота для дискорд-сервера 'Банда Зейна'! Будь первым в таблице лидеров!">
     <meta name="keywords" content="Банда Зейна, Дискорд бот, Бот для Дискорда, Дискорд статистика, лидерборд, сервер Discord">
@@ -37,7 +30,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/leaderboard.css"> 
 </head>
-<body> <header>
+<body class="leaderboard-page"> <header>
         <div class="container">
             <div class="logo">
                 <a href="./index.html"><div class="discord-title">Банда Зейна</div></a>
@@ -139,5 +132,40 @@
 
     <script src="./js/script3.js" defer></script>
     <script src="./js/script2.js" defer></script>
+    <script defer>
+        function loadAnalytics() {
+          const script = document.createElement('script');
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-28Q36YZLGL';
+          script.async = true;
+      
+          script.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-28Q36YZLGL', { 'anonymize_ip': true });
+            console.log('Google Analytics loaded and initialized on interaction.'); 
+          };
+    
+          document.head.appendChild(script);
+        }
+      
+        let analyticsLoaded = false; 
+
+        function triggerLoadAnalytics() {
+          if (!analyticsLoaded) {
+            analyticsLoaded = true;
+            loadAnalytics(); 
+            window.removeEventListener('scroll', triggerLoadAnalytics, { capture: true });
+            window.removeEventListener('mousemove', triggerLoadAnalytics, { capture: true });
+            window.removeEventListener('touchstart', triggerLoadAnalytics, { capture: true });
+            console.log('User interaction detected, loading GA.');
+          }
+        }
+      
+        window.addEventListener('scroll', triggerLoadAnalytics, { capture: true, passive: true });
+        window.addEventListener('mousemove', triggerLoadAnalytics, { capture: true, passive: true });
+        window.addEventListener('touchstart', triggerLoadAnalytics, { capture: true, passive: true });
+
+      </script>
      </body>
 </html>

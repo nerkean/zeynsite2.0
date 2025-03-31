@@ -20,12 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const isProfilePage = bodyClasses.contains('profile-page');
     const isTosPage = bodyClasses.contains('tos-page');
     const isPrivacyPage = bodyClasses.contains('privacy-page');
+    const is404Page = bodyClasses.contains('404-page');
+    const isLeaderboardPage = bodyClasses.contains('leaderboard-page');
 
     if (isProfilePage || isTosPage || isPrivacyPage) {
         let pageType = 'unknown';
         if (isProfilePage) pageType = 'profile';
         else if (isTosPage) pageType = 'ToS';
         else if (isPrivacyPage) pageType = 'Privacy Policy';
+        else if (is404Page) pageType = '404';
+        else if (isLeaderboardPage) pageType = '404';
         logger.info(`AOS check and initialization skipped on ${pageType} page.`);
     } else {
         if (typeof AOS !== 'undefined') {
