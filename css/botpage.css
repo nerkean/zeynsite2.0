@@ -1,28 +1,3 @@
-:root {
-  --bg-body: #0c0c0c;
-  --bg-section-dark: #141414;
-  --bg-section-medium: #212121;
-  --bg-header: rgba(12, 12, 12, 0.9);
-  --bg-card: #141414;
-  --bg-modal: #2b2d31;
-  --bg-code-inline: #2c2c38;
-  --text-primary: #d1d1d1;
-  --text-heading: #ffffff;
-  --text-footer: #8a8a8a;
-  --text-link-footer: #8a8a8a;
-  --accent-primary: #64b5f6;
-  --accent-primary-hover: #42a5f5;
-  --accent-discord: #7289da;
-  --accent-discord-hover: #5865f2;
-  --accent-danger: #f44336;
-  --accent-danger-hover: #e53935;
-  --border-light: #333;
-  --border-medium: #262626;
-  --font-body: 'Roboto', sans-serif;
-  --font-heading: 'Montserrat', sans-serif;
-  --font-code: 'Fira Code', monospace;
-}
-
 body.bot-page {
   background-color: var(--bg-body);
   color: var(--text-primary);
