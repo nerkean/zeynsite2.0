@@ -492,3 +492,60 @@ footer a:hover {
     align-items: center;
   }
 }
+
+.tech-icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  margin-top: 25px;
+  margin-bottom: -25px;
+}
+
+.icon-img {
+  width: 4em;
+  height: 4em;
+  margin-left: 15px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.hero-main-icon {
+  display: block; 
+  margin: 0 auto; 
+  width: 4.3em;    
+  height: 4.3em;
+}
+
+.feature-card-icon {
+  display: block; 
+  margin: 0 auto; 
+  width: 1.5em;   
+  height: 1.5em;
+}
+
+.tech-icons {
+  display: flex;      
+  justify-content: center; 
+  align-items: center;  
+  flex-wrap: wrap;      
+  gap: 30px;            
+  margin-top: 20px;    
+}
+
+.tech-stack-icon {
+  width: 4em;  
+  height: 4em;
+  vertical-align: middle; 
+}
+
+.hero-icon {
+  margin-bottom: 20px;
+  display: inline-block; 
+}
+
+.card-icon {
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}

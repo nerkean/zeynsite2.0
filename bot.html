@@ -18,9 +18,6 @@
         <meta name="twitter:description" content="Погрузитесь в возможности Организатора - многофункционального Discord бота для сервера 'Банда Зейна'.">
         <meta name="twitter:image" content="https://cdn.discordapp.com/icons/1043562997966188645/374bda911ce58d1a649ad70bfa0dd6e9.png">
 
-        <link rel="preload" href="/fonts/montserrat-v29-cyrillic_cyrillic-ext_latin_latin-ext-700.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="/fonts/roboto-v47-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
-
         <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
         <link rel="shortcut icon" href="/icons/favicon.ico" />
@@ -30,7 +27,6 @@
         
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="./css/botpage.css"> 
-        <link rel="stylesheet" href="./css/fontawesome-custom.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
         <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
     </head>
@@ -55,7 +51,9 @@
             <section id="bot-hero" class="hero-section">
                 <div class="container">
                     <div class="hero-content">
-                        <div class="hero-icon" data-aos="zoom-in" data-aos-duration="800"> <i class="fas fa-robot fa-4x"></i> </div>
+                        <div class="hero-icon" data-aos="zoom-in" data-aos-duration="800">
+                            <img src="./img/robot-solid.svg" alt="Robot logo" class="hero-main-icon"> 
+                        </div>
                         <h1 data-aos="fade-up" data-aos-delay="100">Дискорд-бот "Организатор"</h1>
                         <p data-aos="fade-up" data-aos-delay="200">Ваш незаменимый интерактивный помощник на сервере "Банда Зейна". Улучшает игровой опыт и взаимодействие в сообществе Bee Swarm Simulator.</p>
                         <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
@@ -73,28 +71,28 @@
                     <p class="section-subtitle">Откройте для себя уникальные возможности, которые сделают ваше время на сервере незабываемым и продуктивным.</p>
                     <div class="features-grid">
                         <div class="feature-card" data-aos="fade-up">
-                            <div class="card-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div> <h3>Детальная Статистика</h3>
+                            <div class="card-icon"> <img src="./img/chart-line-solid.svg" alt="Chart logo" class="feature-card-icon"></div> <h3>Детальная Статистика</h3>
                             <p>Отслеживайте сообщения <strong>(всего, за день, неделю, месяц)</strong>, время в голосовых каналах, заработанные звезды и смотрите свое место в <a href="./leaderboard.html">рейтингах</a>.</p>
                         </div>
-                        <div class="feature-card" data-aos="fade-up" data-aos-delay="50"> <div class="card-icon"><i class="fas fa-star" aria-hidden="true"></i></div> <h3>Экономика и Звезды</h3>
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="50"> <div class="card-icon"><img src="./img/star-solid.svg" alt="Star logo" class="feature-card-icon"></div> <h3>Экономика и Звезды</h3>
                             <p>Зарабатывайте звезды ⭐ за активность, делайте вклады под проценты, покупайте уникальную роли и предметы в магазине, влияя на свой статус.</p>
                         </div>
                         <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-icon"><i class="fas fa-medal" aria-hidden="true"></i></div>
+                            <div class="card-icon"><img src="./img/medal-solid.svg" alt="Medal logo" class="feature-card-icon"></div>
                             <h3>Прогресс и Достижения</h3>
                             <p>Выполняйте задания <strong>(например, "Написать 500 сообщений за день")</strong>, получайте награды и демонстрируйте свои успехи в профиле.</p>
                         </div>
                          <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
-                            <div class="card-icon"><i class="fas fa-store" aria-hidden="true"></i></div> <h3>Магазин и Инвентарь</h3>
+                            <div class="card-icon"><img src="./img/store-solid.svg" alt="Store logo" class="feature-card-icon"></div> <h3>Магазин и Инвентарь</h3>
                             <p>Приобретайте лутбоксы, роль с особыми правами и другие предметы. Управляйте своим инвентарем через сайт или команды.</p>
                         </div>
                         <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="card-icon"><i class="fas fa-users" aria-hidden="true"></i></div> 
+                            <div class="card-icon"><img src="./img/users-solid.svg" alt="Users logo" class="feature-card-icon"></div> 
                             <h3>Социальное Взаимодействие</h3>
                             <p>Игры <strong>(/rps, /casino)</strong>, браки <strong>(/marry)</strong>, информация о пользователях – все для улучшения общения внутри сообщества.</p>
                         </div>
                         <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
-                            <div class="card-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div> 
+                            <div class="card-icon"><img src="./img/shield-halved-solid.svg" alt="Shield logo" class="feature-card-icon"></div> 
                             <h3>Модерация и Помощь</h3>
                             <p>Базовые инструменты модерации для поддержания порядка, а также информационные команды, помогающие новичкам освоиться.</p>
                         </div>
@@ -109,10 +107,11 @@
                     <div class="tech-details">
                        <p data-aos="fade-up">Организатор построен с использованием современных и надежных технологий. Серверная часть работает на <strong>Node.js</strong> с библиотекой <strong>discord.js</strong> для взаимодействия с Discord API. Данные пользователей, статистика, инвентари и прочее хранятся в базе данных <strong>MongoDB</strong>, обеспечивая быстроту и гибкость. Веб-интерфейс (этот сайт и API) использует фреймворк <strong>Express.js</strong>.</p>
                        <div class="tech-icons" data-aos="fade-up" data-aos-delay="100">
-                            <i class="fab fa-node-js fa-3x"></i>
-                            <i class="fab fa-discord fa-3x"></i>
-                            <i class="fas fa-database fa-3x"></i>
-                            <i class="fab fa-js-square fa-3x"></i> </div>
+                        <img src="./img/node-js-brands.svg" alt="Node.js logo" class="tech-stack-icon">
+                        <img src="./img/discord-brands.svg" alt="Discord logo" class="tech-stack-icon">
+                        <img src="./img/database-solid.svg" alt="Database logo" class="tech-stack-icon">
+                        <img src="./img/square-js-brands.svg" alt="JS logo" class="tech-stack-icon">
+                    </div>
                     </div>
                 </div>
             </section>
