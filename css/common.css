@@ -795,7 +795,7 @@ margin-left: 9px;
     font-size: 0.95rem;
 }
 
-.tos-text h3 {
+.tos-text h2 {
     margin-top: 2em;
     margin-bottom: 0.8em;
     color: var(--primary-color, #64b5f6);
@@ -821,7 +821,7 @@ margin-left: 9px;
 }
 
 .tos-text a {
-    color: var(--primary-color, #64b5f6);
+    color: var(--primary-color, #1188e9);
     text-decoration: none;
 }
 
